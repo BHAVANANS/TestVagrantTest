@@ -22,6 +22,9 @@ class TestVagrant{
         int sum=0;
         for(int i=0;i<4;i++){
             total[i]=unit_price[i] * quantity[i] + gstprice[i];
+            if(unit_price[i]>=500){
+                total[i]=total[i]-(total[i]*0.05;
+            }
             sum+=total[i];
             System.out.println("The amount paid for " +product[i]+" is:"+total[i]);
         }
